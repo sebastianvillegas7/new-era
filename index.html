@@ -48,10 +48,10 @@
     <!-- Spinner End -->
 
 
-    <!-- Navbar Start -->
-    <div class="container-fluid bg-light sticky-top p-0">
-        <nav class="navbar navbar-expand-lg navbar-light p-0">
-            <a href="index.html" class="navbar-brand bg-dark py-4 px-5 me-0">
+    <!-- ! Navbar Start -->
+    <div class="container-fluid bg-dark sticky-top p-0">
+        <nav class="navbar navbar-expand-lg navbar-dark p-0">
+            <a href="index.html" class="navbar-brand py-4 px-5 me-0">
                 <img src="img/logo-new-era.png" alt="Logo New Era" class="logo-new-era">
             </a>
             <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse"
@@ -67,7 +67,7 @@
 
                 <!-- CTA: WhatsApp / Booking -->
                 <!-- TODO: Reemplazar por link real de WhatsApp o booking -->
-                <a class="btn btn-sm btn-primary" href="contact.html">Book Now</a>
+                <a class="btn btn-primary" href="contact.html">Book Now</a>
             </div>
         </nav>
     </div>
@@ -78,7 +78,7 @@
     <div class="container-fluid p-0 hero-header bg-light mb-5" id="home">
         <div class="container p-0">
             <div class="row g-0 align-items-center">
-                <div class="col-lg-6 hero-header-text pb-5 pt-2">
+                <div class="col-lg-6 hero-header-text pb-5">
                     <div class="py-5 px-3 ps-lg-0">
                         <h1 class="font-dancing-script text-primary animated slideInLeft">Welcome</h1>
                         <h1 class="display-4 mb-4 animated slideInLeft">New Era Beauty Salon & Barbershop</h1>
@@ -87,54 +87,56 @@
                             <strong>Washington Heights</strong>.
                         </p>
 
-                        <div class="row g-4 animated slideInLeft">
+                        <div class="row g-4 animated slideInLeft links-hero">
                             <!-- Location -->
-                            <div>
+                            <a href="https://maps.app.goo.gl/vtSKQs5KThZTibjT9" target="_blank" aria-label="Google Maps"
+                                class="text-decoration-none">
                                 <div class="d-flex align-items-center">
-                                    <a href="https://maps.app.goo.gl/vtSKQs5KThZTibjT9"
-                                        class="btn-square btn btn-primary flex-shrink-0" aria-label="Google Maps"
-                                        target="_blank">
-                                        <i class="fa fa-map-marker-alt text-dark"></i>
-                                    </a>
+                                    <div class="btn-square btn btn-primary flex-shrink-0">
+                                        <i class="fa fa-map-marker-alt"></i>
+                                    </div>
+
                                     <div class="px-3">
-                                        <h5 class="text-primary mb-0">Visit Us</h5>
-                                        <p class="fs-6 text-dark mb-0">4177 Broadway 177th Street, NYC</p>
+                                        <h5 class="text-dark mb-0" style="letter-spacing:1px;">Visit Us</h5>
+                                        <p class="fs-6 text-dark mb-0">
+                                            4177 Broadway 177th Street, NYC
+                                        </p>
                                     </div>
                                 </div>
-                            </div>
+                            </a>
 
                             <!-- Phone -->
-                            <div>
+                            <a href="tel:+12127953264" class="text-decoration-none">
                                 <div class="d-flex align-items-center">
-                                    <a class="btn-square btn btn-primary flex-shrink-0" href="tel:+12127953264">
-                                        <i class="fa fa-phone text-dark"></i>
-                                    </a>
+                                    <div class="btn-square btn btn-primary flex-shrink-0">
+                                        <i class="fa fa-phone"></i>
+                                    </div>
+
                                     <div class="px-3">
-                                        <h5 class="text-primary mb-0">Call</h5>
+                                        <h5 class="text-dark mb-0" style="letter-spacing:1px;">Call</h5>
                                         <p class="fs-6 text-dark mb-0">
                                             +1 (212) 795-3264
                                         </p>
                                     </div>
                                 </div>
-                            </div>
+                            </a>
 
                             <!-- Whatsapp -->
-                            <div>
-                                <div class="d-flex align-items-center">                         
-                                    <a class="btn-square btn btn-primary flex-shrink-0"
-                                        href="https://wa.me/13477725938" target="_blank" rel="noopener"
-                                        style="background-color: rgba(0, 128, 0, 0.568);">
-                                        <i class="bi bi-whatsapp text-dark"></i>
+                            <a href="https://wa.me/13477725938" target="_blank" rel="noopener"
+                                class="text-decoration-none">
+                                <div class="d-flex align-items-center">
+                                    <div class="btn btn-square btn-primary whatsapp-btn flex-shrink-0">
+                                        <i class="bi bi-whatsapp"></i>
+                                    </div>
 
-                                    </a>
                                     <div class="px-3">
-                                        <h5 class="text-primary mb-0">WhatsApp</h5>
+                                        <h5 class="text-dark mb-0" style="letter-spacing:1px;">WhatsApp</h5>
                                         <p class="fs-6 text-dark mb-0">
                                             +1 (347) 772-5938
                                         </p>
                                     </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
 
                         <div class="mt-4 animated slideInLeft text-center">
@@ -147,11 +149,10 @@
                 </div>
 
                 <div class="col-lg-5">
-                    <div class="owl-carousel header-carousel animated fadeIn">
-                        <!-- TODO: reemplazar estas imágenes por fotos reales del salón y trabajos -->
-                        <img class="img-fluid" src="img/hero-slider-1.jpg" alt="New Era salon">
-                        <img class="img-fluid" src="img/hero-slider-2.jpg" alt="New Era barbershop">
-                        <img class="img-fluid" src="img/hero-slider-3.jpg" alt="New Era braids and nails">
+                    <div class="hero-video animated fadeIn">
+                        <video autoplay muted loop playsinline class="w-100">
+                            <source src="./video/new-era.mp4" type="video/mp4">
+                        </video>
                     </div>
                 </div>
             </div>
@@ -300,11 +301,11 @@
         <div class="container py-5">
             <div class="row g-5">
                 <div class="col-lg-6 pe-lg-5">
-                    <a href="index.html">
+                    <a href="index.html" class="a-logo">
                         <img src="img/logo-new-era.png" alt="Logo New Era" class="logo-new-era">
                     </a>
 
-                    <p>
+                    <p class="mt-4">
                         New Era Beauty Salon & Barbershop: barbería, braids, color y nail services en Washington
                         Heights.
                         <strong>Take advantage of the promotions</strong>.
@@ -350,13 +351,12 @@
     </div>
     <!-- ! Footer End -->
 
-
     <!-- ! Copyright Start -->
     <div class="container-fluid bg-dark text-white border-top border-secondary py-4 wow fadeIn" data-wow-delay="0.1s">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    &copy; <a class="border-bottom" href="index.html#home">New Era</a> 2026, All Right Reserved.
+                    <a class="border-bottom" href="index.html#home">New Era</a> &copy; 2026, All Right Reserved.
                 </div>
                 <div class="col-md-6 text-center text-md-end">
                     <span class="ms-2">Customizations by <a class="border-bottom" target="_blank"
@@ -366,7 +366,6 @@
         </div>
     </div>
     <!-- ! Copyright End -->
-
 
     <!-- ! Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>

@@ -16,9 +16,9 @@
   --bs-teal: #20c997;
   --bs-cyan: #0dcaf0;
   --bs-white: #fff;
-  --bs-gray: #6c757d;
+  --bs-gray: #ebebeb92;
   --bs-gray-dark: #343a40;
-  --bs-primary: #a49886;
+  --bs-primary: #9f9f9f;
   --bs-secondary: #444444;
   --bs-success: #198754;
   --bs-info: #0dcaf0;
@@ -210,8 +210,15 @@ a {
   color: #bf9456;
   text-decoration: none;
 }
-a:hover {
-  color: #997645;
+.links-hero a:hover {
+  background: linear-gradient(
+    to right,
+    rgba(108,117,125,0.18) 0%,
+    rgba(108,117,125,0.12) 25%,
+    rgba(108,117,125,0.06) 45%,
+    rgba(108,117,125,0.02) 55%,
+    rgba(108,117,125,0) 60%
+  );
 }
 a:not([href]):not([class]),
 a:not([href]):not([class]):hover {
@@ -2640,20 +2647,25 @@ fieldset:disabled .btn {
   opacity: 0.65;
 }
 .btn-primary {
-  color: #000;
-  background-color: #a49886;
-  border-color: #6a6762;
+  color: var(--bs-light);
+  background-color: #484848;
 }
-.btn-primary:hover {
-  color: #000;
-  background-color: #6a6762;
-  border-color: #a49886;
+.whatsapp-btn {
+  background-color: rgba(0, 128, 0, 0.568);
+}
+.btn-primary:hover, .btn-square:hover {
+  color: var(--bs-gray-dark);
+  background-color: #9f9f9f;
+  font-weight: 660;
+}
+.whatsapp-btn:hover {
+  color: #ffffff;
+  background-color: rgba(2, 91, 2, 0.759);
 }
 .btn-check:focus + .btn-primary,
 .btn-primary:focus {
   color: #000;
-  background-color: #6a6762;
-  border-color: #a49886;
+  background-color: rgb(74, 74, 74);
   box-shadow: 0 0 0 0.25rem rgba(162, 126, 73, 0.5);
 }
 .btn-check:checked + .btn-primary,
@@ -3987,9 +3999,6 @@ fieldset:disabled .btn {
 }
 .navbar-expand .navbar-toggler {
   display: none;
-}
-.navbar-light .navbar-brand {
-  color: rgba(0, 0, 0, 0.9);
 }
 .navbar-light .navbar-brand:hover,
 .navbar-light .navbar-brand:focus {
