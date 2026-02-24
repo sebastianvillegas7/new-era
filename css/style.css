@@ -170,6 +170,11 @@
   background: var(--bs-primary);
 }
 
+/** Logotipo **/
+.logo-new-era {
+  width: 160px;
+}
+
 @media (max-width: 991.98px) {
   .navbar .navbar-nav .nav-link {
     margin-left: 0;
@@ -267,6 +272,11 @@
   background-size: contain;
 }
 
+.service .service-item img {
+  filter: brightness(0) saturate(100%);
+}
+
+
 /*** Service ***/
 @media (max-width: 768px) {
   .service .service-item {
@@ -303,7 +313,6 @@
 .service .service-item .btn-primary:hover {
   background: var(--bs-primary);
 }
-
 .service .service-item img {
   width: 70px;
   margin-bottom: 20px;
