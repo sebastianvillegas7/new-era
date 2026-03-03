@@ -106,7 +106,7 @@
 
                         <p class="mb-2">
                             <i class="fa fa-phone-alt me-2 text-primary"></i>
-                            (212) 795-3264
+                            +1 (212) 795-3264
                         </p>
 
                         <p class="mb-3">
@@ -132,12 +132,9 @@
                 <!-- * End Contact Info -->
 
                 <div class="col-lg-5 wow fadeIn" data-wow-delay="0.3s">
-                    <h5 class="mb-2 text-center">Contact Form</h5>
                     <form action="https://api.web3forms.com/submit" method="POST">
-                        <!-- Web3Forms REQUIRED -->
+                        <!-- TODO: Web3Forms REQUIRED -->
                         <input type="hidden" name="access_key" value="PEGAR_ACCESS_KEY_AQUI">
-                        <!-- TODO: fijar el destinatario -->
-                        <!-- <input type="hidden" name="to_email" value="contacto@salonnewera.com"> -->
 
                         <!-- Extras  -->
                         <input type="hidden" name="subject" value="New contact from New Era website">
@@ -145,7 +142,7 @@
                         <input type="hidden" name="redirect" value="contact.html?sent=1">
                         <input type="hidden" name="replyto" value="%email%">
 
-                        <!-- Anti-spam honeypot -->
+                        <!-- Anti-spam -->
                         <input type="checkbox" name="botcheck" class="d-none" style="display:none;">
 
                         <div class="row g-3">
@@ -167,17 +164,16 @@
 
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="tel" class="form-control" id="mobileInput" name="mobileInput"
-                                        placeholder="Mobile">
-                                    <label for="mobileInput">Your Mobile</label>
+                                    <input type="tel" class="form-control" id="phone" name="phone" placeholder="Mobile">
+                                    <label for="phone">Your Mobile</label>
                                 </div>
                             </div>
 
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="subjectInput" name="subjectInput"
+                                    <input type="text" class="form-control" id="subject" name="subject"
                                         placeholder="Subject">
-                                    <label for="subjectInput">Subject</label>
+                                    <label for="subject">Subject</label>
                                 </div>
                             </div>
 
@@ -218,7 +214,7 @@
 
                     <p class="mb-2"><i class="fa fa-map-marker-alt me-2"></i>4177 Broadway, Washington Heights, NY</p>
 
-                    <p class="mb-2"><i class="fa fa-phone-alt me-2"></i>(212) 795-3264</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-2"></i>+1 (212) 795-3264</p>
 
                     <!-- TODO: completar email real -->
                     <p><i class="fa fa-envelope me-2"></i>info@salonnewera.com</p>

@@ -151,18 +151,6 @@
   width: 160px;
 }
 
-/** Vid Hero **/
-.hero-video {
-  overflow: hidden;
-  border-radius: 6px;
-}
-
-.hero-video video {
-  width: 100%;
-  height: 550px;
-  
-}
-
 @media (max-width: 991.98px) {
   .navbar .navbar-nav .nav-link {
     margin-left: 0;
